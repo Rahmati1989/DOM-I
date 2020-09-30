@@ -41,12 +41,24 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let anchortag = document.querySelectorAll('a');
-console.log(anchortag);
-anchortag[0].textContent = siteContent["nav"]["nav-item-1"];
-anchortag[1].textContent = siteContent["nav"]["nav-item-2"];
-anchortag[2].textContent = siteContent["nav"]["nav-item-3"];
-anchortag[3].textContent = siteContent["nav"]["nav-item-4"];
-anchortag[4].textContent = siteContent["nav"]["nav-item-5"];
-anchortag[5].textContent = siteContent["nav"]["nav-item-6"];
+const a = document.querySelectorAll('a');
+a[0].innerText = siteContent['nav']['nav-item-1'];
+a[1].innerText = siteContent['nav']['nav-item-2']
+a[2].innerText = siteContent['nav']['nav-item-3']
+a[3].innerText = siteContent['nav']['nav-item-4']
+a[4].innerText = siteContent['nav']['nav-item-5']
+a[5].innerText = siteContent['nav']['nav-item-6']
 
+let circleimg = document.getElementById('cta-img');
+circleimg.setAttribute('src',siteContent["cta"]["img-src"]);
+let h1 = document.querySelector('h1');
+h1.innerText = siteContent["cta"]["h1"];
+let button = document.querySelector('button');
+button.innerText = siteContent["cta"]["button"];
+
+let textContent = document.querySelectorAll('.text-content');
+textContent[0].innerText = siteContent["main-content"]["features-h4"];
+textContent[1].innerText = siteContent["main-content"]["about-h4"];
+textContent[2].innerText = siteContent["main-content"]["services-h4"];
+textContent[3].innerText = siteContent["main-content"]["product-h4"];
+textContent[4].innerText = siteContent["main-content"]["vision-h4"];
