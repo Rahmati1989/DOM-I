@@ -79,3 +79,15 @@ textContentP[6].innerText = siteContent["contact"]["phone"];
 textContentP[7].innerText = siteContent["contact"]["email"];
 textContentP[8].innerText =siteContent["footer"]["copyright"];
 
+const parent = document.querySelector("nav");
+const newContent  = document.createElement("a");
+newContent.textContent = "Home";
+newContent.style.color = "green";
+
+parent.prepend(newContent);
+
+const child = document.querySelector('nav');
+const newcontetnChild = document.createElement('a');
+newcontetnChild.textContent = "Help";
+newcontetnChild.style.color = "green";
+child.appendChild(newcontetnChild);
