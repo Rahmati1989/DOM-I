@@ -40,3 +40,54 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const a = document.querySelectorAll('a');
+a[0].innerText = siteContent['nav']['nav-item-1'];
+a[1].innerText = siteContent['nav']['nav-item-2']
+a[2].innerText = siteContent['nav']['nav-item-3']
+a[3].innerText = siteContent['nav']['nav-item-4']
+a[4].innerText = siteContent['nav']['nav-item-5']
+a[5].innerText = siteContent['nav']['nav-item-6']
+
+let circleimg = document.getElementById('cta-img');
+circleimg.setAttribute('src',siteContent["cta"]["img-src"]);
+let h1 = document.querySelector('h1');
+h1.innerText = siteContent["cta"]["h1"];
+let button = document.querySelector('button');
+button.innerText = siteContent["cta"]["button"];
+
+let textContent = document.querySelectorAll('h4');
+textContent[0].innerText = siteContent["main-content"]["features-h4"];
+textContent[1].innerText = siteContent["main-content"]["about-h4"];
+textContent[2].innerText = siteContent["main-content"]["services-h4"];
+textContent[3].innerText = siteContent["main-content"]["product-h4"];
+textContent[4].innerText = siteContent["main-content"]["vision-h4"];
+
+let textContentP = document.querySelectorAll('p');
+textContentP[0].innerText = siteContent["main-content"]["features-content"];
+textContentP[1].innerText = siteContent["main-content"]["about-content"];
+textContentP[2].innerText = siteContent["main-content"]["services-content"];
+textContentP[3].innerText = siteContent["main-content"]["product-content"];
+textContentP[4].innerText = siteContent["main-content"]["vision-content"];
+
+let middleimage = document.querySelector('#middle-img');
+middleimage.src = "img/mid-page-accent.jpg"
+
+textContent[5].innerText = siteContent["contact"]["contact-h4"];
+textContentP[5].innerText = siteContent["contact"]["address"];
+textContentP[6].innerText = siteContent["contact"]["phone"];
+textContentP[7].innerText = siteContent["contact"]["email"];
+textContentP[8].innerText =siteContent["footer"]["copyright"];
+
+const parent = document.querySelector("nav");
+const newContent  = document.createElement("a");
+newContent.textContent = "Home";
+newContent.style.color = "green";
+
+parent.prepend(newContent);
+
+const child = document.querySelector('nav');
+const newcontetnChild = document.createElement('a');
+newcontetnChild.textContent = "Help";
+newcontetnChild.style.color = "green";
+child.appendChild(newcontetnChild);
