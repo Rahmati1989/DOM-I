@@ -56,9 +56,26 @@ h1.innerText = siteContent["cta"]["h1"];
 let button = document.querySelector('button');
 button.innerText = siteContent["cta"]["button"];
 
-let textContent = document.querySelectorAll('.text-content');
+let textContent = document.querySelectorAll('h4');
 textContent[0].innerText = siteContent["main-content"]["features-h4"];
 textContent[1].innerText = siteContent["main-content"]["about-h4"];
 textContent[2].innerText = siteContent["main-content"]["services-h4"];
 textContent[3].innerText = siteContent["main-content"]["product-h4"];
 textContent[4].innerText = siteContent["main-content"]["vision-h4"];
+
+let textContentP = document.querySelectorAll('p');
+textContentP[0].innerText = siteContent["main-content"]["features-content"];
+textContentP[1].innerText = siteContent["main-content"]["about-content"];
+textContentP[2].innerText = siteContent["main-content"]["services-content"];
+textContentP[3].innerText = siteContent["main-content"]["product-content"];
+textContentP[4].innerText = siteContent["main-content"]["vision-content"];
+
+let middleimage = document.querySelector('#middle-img');
+middleimage.src = "img/mid-page-accent.jpg"
+
+textContent[5].innerText = siteContent["contact"]["contact-h4"];
+textContentP[5].innerText = siteContent["contact"]["address"];
+textContentP[6].innerText = siteContent["contact"]["phone"];
+textContentP[7].innerText = siteContent["contact"]["email"];
+textContentP[8].innerText =siteContent["footer"]["copyright"];
+
